@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <input type="text" name="search-text" onchange="handleSearch(event)"><Button>Search</Button>
+    </header>
+    <aside class="sidebar">
+        <button class="toggle-btn" onclick="toggleSidebar()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="shorts.html"><i class="fas fa-play-circle"></i><span>Shorts</span></a></li>
+                <li><a href="subscriptions.html"><i class="fas fa-newspaper"></i><span>Subscriptions</span></a></li>
+                <li><a href="library.html"><i class="fas fa-folder"></i><span>Library</span></a></li>
+                <li><a href="history.html"><i class="fas fa-history"></i><span>History</span></a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside{
+    background-color: rgb(10, 10, 10);
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 6rem auto;
+    grid-template-columns: 18rem 1fr;  /* 1fr means 1 fraction of the remaining space*/
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: rgb(10, 10, 10);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 22rem);
+    gap: 3rem;
+    padding-left: 20rem;
+    grid-auto-rows: auto;
+    background-color: rgb(95, 43, 43);
+}
+
+.card{
+    background-color: rgb(162, 138, 138);
+}
+
+/* Body Layout */
+body {
+    display: flex;
+    height: 80vh;
+    background: #0e0e0e;
+} 
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #0e0c0c;
+    height: 100%;
+    margin-top: 100px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    transition: width 0.3s ease;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+}
+
+/* Collapsed Sidebar */
+.sidebar.collapsed {
+    width: 70px;
+}
+
+/* Navigation List */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Sidebar Items */
+.sidebar nav ul li {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+}
+
+.sidebar nav ul li:hover {
+    background: #767575;
+}
+
+/* Sidebar Icons */
+.sidebar nav ul li i {
+    font-size: 22px;
+    width: 40px;
+    text-align: center;
+}
+
+/* Sidebar Text */
+.sidebar nav ul li span {
+    font-size: 16px;
+    color: #f1f1f1;
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Hide text when collapsed */
+.sidebar.collapsed nav ul li span {
+    opacity: 0;
+}
+
+/* Sidebar Links */
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    border: none;
+    background: none;
+}
+
+/* Main Content */
+main {
+    margin-top: 100px;
+    margin-left: 30px;
+    padding: 20px;
+    flex: 1;
+    transition: margin-left 0.3s ease;
+}
+
+/* Adjust main content when sidebar is collapsed */
+/* .sidebar.collapsed + main {
+    margin-left: 70px;
+} */
